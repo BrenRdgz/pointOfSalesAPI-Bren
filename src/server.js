@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
     res.setTimeout(1000);
     next();
   });
-
+app.use(cors());
 app.use(express.json());
 app.get('/', (req, res) =>{
     res.send('Hi');
